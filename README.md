@@ -28,6 +28,15 @@ To perform a deploy (for example on heroku.com):
 For Object Detection is used cvlib that is a very simple but powerful library for object detection that is fueled by OpenCV and Tensorflow.
 For server-client interactions using REST API we apply FastAPI.
 FastAPI has a built-in client for the interaction with a server (localhost:8000/docs).
+To test the server using built-in FastAPI's client:
+- enter on it, click on the "Try it out" button
+- You can choose a model from the model field (if you select the full YOLO model
+the server will be stuck until the weights for this model are downloaded)
+and a file which should be the image in which you want the server to detect objects
+- Submit an image from your local filesystem by clicking the "Choose File" button,
+then click on the blue "Execute" button to send an HTTP request to the server
+- After doing so, scroll down and you will see the response from it
+
 
 #### License
 
